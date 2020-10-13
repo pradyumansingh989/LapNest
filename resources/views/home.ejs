@@ -13,118 +13,22 @@
     <section class="menu container mx-auto py-8">
         <h1 class="text-xl font-bold mb-8">All laptops</h1>
         <div class="grid grid-cols-4 col-gap-12 row-gap-16">
-            <div class="w-64">
-                <img class="h-40 mb-4 mx-auto" src="/img/lapnest-laptop3.png" alt="category-lap">
-                <div class="text-center">
-                    <h2 class="mb-4 text-lg">Macbook Pro</h2>
-                    <span class="size py-1 px-4 rounded-full upppercase text-xs">13' inch</span>
-                    <div class="flex items-center justify-around mt-6">
-                        <span class="font-bold text-lg">₹1,70,000</span>
-                        <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
-                            <span>+</span>
-                            <span class="ml-4">Add</span>
-                        </button>
+            <% laptops.forEach(function(laptops){ %>
+                <div class="w-64">
+                    <img class="h-40 mb-4 mx-auto" src="/img/<%= laptops.image %>" alt="category-lap">
+                    <div class="text-center">
+                        <h2 class="mb-4 text-lg"><%= laptops.name %></h2>
+                        <span class="size py-1 px-4 rounded-full upppercase text-xs"><%= laptops.size %></span>
+                        <div class="flex items-center justify-around mt-6">
+                            <span class="font-bold text-lg">₹<%= laptops.price %></span>
+                            <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                                <span>+</span>
+                                <span class="ml-4">Add</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="w-64">
-                <img class="h-40 mb-4 mx-auto" src="/img/lapnest-laptop3.png" alt="category-lap">
-                <div class="text-center">
-                    <h2 class="mb-4 text-lg">Macbook Air</h2>
-                    <span class="size py-1 px-4 rounded-full upppercase text-xs">13' inch</span>
-                    <div class="flex items-center justify-around mt-6">
-                        <span class="font-bold text-lg">₹90,000</span>
-                        <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
-                            <span>+</span>
-                            <span class="ml-4">Add</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="w-64">
-                <img class="h-40 mb-4 mx-auto" src="/img/lapnest-laptop3.png" alt="category-lap">
-                <div class="text-center">
-                    <h2 class="mb-4 text-lg">TUF A15</h2>
-                    <span class="size py-1 px-4 rounded-full upppercase text-xs">15.6' inch</span>
-                    <div class="flex items-center justify-around mt-6">
-                        <span class="font-bold text-lg">₹85,000</span>
-                        <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
-                            <span>+</span>
-                            <span class="ml-4">Add</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="w-64">
-                <img class="h-40 mb-4 mx-auto" src="/img/lapnest-laptop3.png" alt="category-lap">
-                <div class="text-center">
-                    <h2 class="mb-4 text-lg">Alienware</h2>
-                    <span class="size py-1 px-4 rounded-full upppercase text-xs">15.6' inch</span>
-                    <div class="flex items-center justify-around mt-6">
-                        <span class="font-bold text-lg">₹1,92,000</span>
-                        <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
-                            <span>+</span>
-                            <span class="ml-4">Add</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="w-64">
-                <img class="h-40 mb-4 mx-auto" src="/img/lapnest-laptop3.png" alt="category-lap">
-                <div class="text-center">
-                    <h2 class="mb-4 text-lg">Legion 7i</h2>
-                    <span class="size py-1 px-4 rounded-full upppercase text-xs">15.6' inch</span>
-                    <div class="flex items-center justify-around mt-6">
-                        <span class="font-bold text-lg">₹1,75,000</span>
-                        <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
-                            <span>+</span>
-                            <span class="ml-4">Add</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="w-64">
-                <img class="h-40 mb-4 mx-auto" src="/img/lapnest-laptop3.png" alt="category-lap">
-                <div class="text-center">
-                    <h2 class="mb-4 text-lg">Nitro 7</h2>
-                    <span class="size py-1 px-4 rounded-full upppercase text-xs">15.6' inch</span>
-                    <div class="flex items-center justify-around mt-6">
-                        <span class="font-bold text-lg">₹70,000</span>
-                        <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
-                            <span>+</span>
-                            <span class="ml-4">Add</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="w-64">
-                <img class="h-40 mb-4 mx-auto" src="/img/lapnest-laptop3.png" alt="category-lap">
-                <div class="text-center">
-                    <h2 class="mb-4 text-lg">Dell G3</h2>
-                    <span class="size py-1 px-4 rounded-full upppercase text-xs">15.6' inch</span>
-                    <div class="flex items-center justify-around mt-6">
-                        <span class="font-bold text-lg">₹67,000</span>
-                        <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
-                            <span>+</span>
-                            <span class="ml-4">Add</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="w-64">
-                <img class="h-40 mb-4 mx-auto" src="/img/lapnest-laptop3.png" alt="category-lap">
-                <div class="text-center">
-                    <h2 class="mb-4 text-lg">Macbook Pro</h2>
-                    <span class="size py-1 px-4 rounded-full upppercase text-xs">16' inch</span>
-                    <div class="flex items-center justify-around mt-6">
-                        <span class="font-bold text-lg">₹1,95,000</span>
-                        <button class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
-                            <span>+</span>
-                            <span class="ml-4">Add</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
+           <% })%>
         </div>
     </section>
     <script src="/js/app.js"></script>
