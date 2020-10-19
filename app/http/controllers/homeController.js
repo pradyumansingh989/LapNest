@@ -5,7 +5,7 @@ function homeController(){
     return {
         async index(req,res){
             const laptops = await Menu.find()
-            console.log(laptops)
+            // console.log(laptops)
             return res.render('home',{laptops:laptops})
             
         }

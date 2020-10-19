@@ -37,7 +37,9 @@ app.use(session({
 }))
 
 //passport config
-const passportInit = require('./app/config/passport')
+const passportInit = require('./app/config/passport');
+const { request } = require('http');
+const Server = require('socket.io');
 passportInit(passport)
 app.use(passport.initialize())
 app.use(passport.session())
@@ -66,6 +68,19 @@ app.set('view engine','ejs');
 require('./routes/web')(app)
 
 //server run
-app.listen(PORT, () => {
+const server =  app.listen(PORT, () => {
     console.log(`Server is Up and Running on port ${PORT}`);
 });
+
+
+//Socket
+
+const io = require('socket.io')(server)
+io.on('connection',(socket) => {
+    // Join
+    console.log(socket.id);
+    socket.on('join',(roomName) => {
+        console.log(roomName)
+        socket.join(roomName)
+    })
+})
