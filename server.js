@@ -13,8 +13,7 @@ const passport = require('passport')
 const Emitter = require('events')
 
 //Database connection
-const url = 'mongodb://localhost/LapNest';
-mongoose.connect(url, {useNewUrlParser:true, useCreateIndex:true, useUnifiedTopology:true, useFindAndModify:true});
+mongoose.connect(process.env.MONGO_CONNECTION_URL, {useNewUrlParser:true, useCreateIndex:true, useUnifiedTopology:true, useFindAndModify:true});
 const connection = mongoose.connection;
 connection.once('open',()=>{
     console.log('Database Successfully Connected...');
@@ -72,6 +71,9 @@ app.set('view engine','ejs');
 
 // require the routes
 require('./routes/web')(app)
+app.use((req,res)=>{
+    res.status(404).render('errors/404')
+})
 
 //server run
 const server =  app.listen(PORT, () => {
