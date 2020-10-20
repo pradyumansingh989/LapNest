@@ -10,6 +10,7 @@ const session = require('express-session');
 const flash = require('express-flash');
 const MongoDbStore = require('connect-mongo')(session); //passing session
 const passport = require('passport')
+const Emitter = require('events')
 
 //Database connection
 const url = 'mongodb://localhost/LapNest';
@@ -27,6 +28,11 @@ let mongoStore = new MongoDbStore({
     mongooseConnection: connection,
     collection: 'sessions'
 })
+
+//Event Emitter
+const eventEmitter = new Emitter()
+app.set('eventEmitter',eventEmitter)
+
 //session config
 app.use(session({
     secret: process.env.COOKIE_SECRET,
@@ -83,4 +89,12 @@ io.on('connection',(socket) => {
         console.log(roomName)
         socket.join(roomName)
     })
+})
+
+eventEmitter.on('orderUpdated',(data) => {
+    io.to(`order_${data.id}`).emit('orderUpdated', data)
+})
+
+eventEmitter.on('orderPlaced',(data)=>{
+    io.to('adminRoom').emit('orderPlaced',data)
 })
