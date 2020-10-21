@@ -30,4 +30,16 @@ A fully responsive E-commerce site for buying laptops made using node.js, MongoD
   Import some of the data from the menu.json file.
   
    ## Screenshots  
-   
+   ![](Screenshots/Homepage.png)  
+   ![](Screenshots/Homepage-2.png)  
+   ![](Screenshots/Empty-cart.png)  
+   ![](Screenshots/Login.png)  
+   ![](Screenshots/register.png)
+   ![](Screenshots/added-to-cart.png)
+   ![](Screenshots/cart.png)
+   ![]Screenshots/cart-2.png)
+   ![](Screenshots/order-placed.png)
+   ![](Screenshots/orders.png)
+   ![](Screenshots/update-order.png)
+   ![](Screenshots/admin.png)
+   ![](Screenshots/admin-update.png)
