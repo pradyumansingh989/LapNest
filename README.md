@@ -37,7 +37,7 @@ A fully responsive E-commerce site for buying laptops made using node.js, MongoD
    ![](Screenshots/register.png)
    ![](Screenshots/added-to-cart.png)
    ![](Screenshots/cart.png)
-   ![]Screenshots/cart-2.png)
+   ![](Screenshots/cart-2.png)
    ![](Screenshots/order-placed.png)
    ![](Screenshots/orders.png)
    ![](Screenshots/update-order.png)
