@@ -3,7 +3,7 @@
       "$oid": "5eee651f739f8c674fd736ee"
     },
     "name": "Macbook Pro",
-    "image": "lapnest-laptop3.png",
+    "image": "Apple-Macbook-Pro.png",
     "price": "170000",
     "size": "13' inch"
   },{
@@ -11,7 +11,7 @@
       "$oid": "5eee6671a27a66807cf2bea3"
     },
     "name": "Macbook Air",
-    "image": "lapnest-laptop3.png",
+    "image": "macbook-air.png",
     "price": "90000",
     "size": "13' inch"
   },{
@@ -19,7 +19,7 @@
       "$oid": "5eee6692a27a66807cf2bea4"
     },
     "name": "TUF A15",
-    "image": "lapnest-laptop3.png",
+    "image": "tuf-a15.png",
     "price": "85000",
     "size": "15.6' inch"
   },{
@@ -27,7 +27,7 @@
       "$oid": "5eee66a5a27a66807cf2bea5"
     },
     "name": "Alienware",
-    "image": "lapnest-laptop3.png",
+    "image": "alienware-m15-lede.png",
     "price": "192000",
     "size": "15.6' inch"
   },{
@@ -35,7 +35,7 @@
       "$oid": "5eee66c4a27a66807cf2bea6"
     },
     "name": "Legion 7i",
-    "image": "lapnest-laptop3.png",
+    "image": "lenovo-legion-7i.png",
     "price": "175000",
     "size": "15.6' inch"
   },{
@@ -43,7 +43,7 @@
       "$oid": "5eee66cfa27a66807cf2bea7"
     },
     "name": "Nitro 7",
-    "image": "lapnest-laptop3.png",
+    "image": "nitro-7.png",
     "price": "70000",
     "size": "15.6' inch"
   },{
@@ -51,7 +51,7 @@
       "$oid": "5eee66eea27a66807cf2bea8"
     },
     "name": "Dell G3",
-    "image": "lapnest-laptop3.png",
+    "image": "DELL_G3_15.png",
     "price": "67000",
     "size": "15.6' inch"
   },{
@@ -59,7 +59,7 @@
       "$oid": "5eee6717a27a66807cf2bea9"
     },
     "name": "Macbook Pro",
-    "image": "lapnest-laptop3.png",
+    "image": "Apple-Macbook-Pro.png",
     "price": "195000",
     "size": "16' inch"
   }]
